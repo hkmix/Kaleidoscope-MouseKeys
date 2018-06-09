@@ -19,6 +19,8 @@ uint32_t MouseKeys_::accelEndTime;
 uint32_t MouseKeys_::endTime;
 uint32_t MouseKeys_::wheelEndTime;
 
+uint8_t& MouseKeys_::speedLimit = MouseWrapper_::speedLimit;
+
 void MouseKeys_::setWarpGridSize(uint8_t grid_size) {
   MouseWrapper.warp_grid_size = grid_size;
 }
